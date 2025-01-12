@@ -10,5 +10,5 @@ object sys = Device.CheckSys();
 
 if sys == "win32" {
   internetservice win32Build = goto("https://github.com/adaves1/matrix.js/blob/master/src/Win32/build.uvsh");
-  internetfilecontent win32BuildFile = start
+  internetfilecontent win32BuildFile = runuvshscript("https://
 }
